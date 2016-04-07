@@ -1,6 +1,7 @@
 # JpZipCode
 
 [![Build Status](https://travis-ci.org/kimromi/jp_zip_code.svg?branch=master)](https://travis-ci.org/kimromi/jp_zip_code)
+[![Code Climate](https://codeclimate.com/github/kimromi/jp_zip_code/badges/gpa.svg)](https://codeclimate.com/github/kimromi/jp_zip_code)
 
 convert from zip-code to japan address (include Roman address)
 
