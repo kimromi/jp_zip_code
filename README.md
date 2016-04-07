@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/jp_zip_code.svg)](https://badge.fury.io/rb/jp_zip_code)
 [![Build Status](https://travis-ci.org/kimromi/jp_zip_code.svg?branch=master)](https://travis-ci.org/kimromi/jp_zip_code)
+[![Test Coverage](https://codeclimate.com/github/kimromi/jp_zip_code/badges/coverage.svg)](https://codeclimate.com/github/kimromi/jp_zip_code/coverage)
 [![Code Climate](https://codeclimate.com/github/kimromi/jp_zip_code/badges/gpa.svg)](https://codeclimate.com/github/kimromi/jp_zip_code)
 
 convert from zip-code to japan address (include Roman address)
