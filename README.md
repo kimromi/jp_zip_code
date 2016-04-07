@@ -1,5 +1,7 @@
 # JpZipCode
 
+[![Build Status](https://travis-ci.org/kimromi/jp_zip_code.svg?branch=master)](https://travis-ci.org/kimromi/jp_zip_code)
+
 convert from zip-code to japan address (include Roman address)
 
 ## Installation
