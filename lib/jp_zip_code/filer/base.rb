@@ -50,10 +50,6 @@ module JpZipCode
       def clean
         File.delete(zip_file_name) if File.exist?(zip_file_name)
       end
-
-      def convert(str)
-        JpZipCode::Converter.not_found(str, not_found)
-      end
     end
   end
 end
