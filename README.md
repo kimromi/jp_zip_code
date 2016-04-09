@@ -28,16 +28,17 @@ Or install it yourself as:
 ```
 address = JpZipCode.search '100-0001'
 
-address.pref_kanji    # => 東京都
-address.city_kanji    # => 千代田区
-address.town_kanji    # => 千代田
-address.pref_kana     # => ﾄｳｷｮｳﾄ
-address.city_kana     # => ﾁﾖﾀﾞｸ
-address.town_kana     # => ﾁﾖﾀﾞ
-address.pref_roman    # => Tokyo-To
-address.city_roman    # => Chiyoda-Ku
-address.town_roman    # => Chiyoda
-address.zip_code      # => 1000001
+address.pref_code     # => '13'
+address.pref_kanji    # => '東京都'
+address.city_kanji    # => '千代田区'
+address.town_kanji    # => '千代田'
+address.pref_kana     # => 'ﾄｳｷｮｳﾄ'
+address.city_kana     # => 'ﾁﾖﾀﾞｸ'
+address.town_kana     # => 'ﾁﾖﾀﾞ'
+address.pref_roman    # => 'Tokyo-To'
+address.city_roman    # => 'Chiyoda-Ku'
+address.town_roman    # => 'Chiyoda'
+address.zip_code      # => '1000001'
 
 JpZipCode.update      # update json file
 ```
