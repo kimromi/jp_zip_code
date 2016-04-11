@@ -20,7 +20,7 @@ module JpZipCode
 
   def self.convert(data)
     data.each_with_object({}) do |(key, value), hash|
-      converted = %w(ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ IKANIKEISAIGANAIBAAI 以下に掲載がない場合).include?(value) ? "" : value
+      converted = %w(ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ IKANIKEISAIGANAIBAAI 以下に掲載がない場合).include?(value) ? '' : value
       converted = converted.gsub(/\(.*\)/, '').gsub(/（.*）/, '')
       converted = converted.split(' ').map(&:capitalize).join(' ')
       %w(Ken To Fu Shi Gun Ku Machi).each do |suffix|

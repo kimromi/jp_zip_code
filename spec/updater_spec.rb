@@ -28,7 +28,7 @@ describe JpZipCode::Updater do
         town_kana:    'ｶｻﾞｼ(4ﾁｮｳﾒ)',
         pref_kanji:   '福岡県',
         city_kanji:   '北九州市門司区',
-        town_kanji:   '風師（４丁目）',
+        town_kanji:   '風師（４丁目）'
       }
     }
   end
