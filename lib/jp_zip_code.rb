@@ -19,6 +19,8 @@ module JpZipCode
   end
 
   def self.convert(data)
+    data['pref_code'] = pref_codes.invert[data['pref_kanji']].to_s
+
     data.each_with_object({}) do |(key, value), hash|
       converted = %w(ｲｶﾆｹｲｻｲｶﾞﾅｲﾊﾞｱｲ IKANIKEISAIGANAIBAAI 以下に掲載がない場合).include?(value) ? '' : value
       converted = converted.gsub(/\(.*\)/, '').gsub(/（.*）/, '')
@@ -28,6 +30,10 @@ module JpZipCode
       end
       hash[key] = converted
     end
+  end
+
+  def self.pref_codes
+    YAML.load(File.open('data/pref_code.yaml'))
   end
 
   def self.update
