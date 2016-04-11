@@ -2,8 +2,8 @@ module JpZipCode
   class Updater
     def initialize(dry_run = true)
       @dry_run = dry_run
-      @jp_filer = JpZipCode::Filer::Jp.new
-      @roman_filer = JpZipCode::Filer::Roman.new
+      @jp_filer = JpZipCode::Filer.new(:jp)
+      @roman_filer = JpZipCode::Filer.new(:roman)
     end
 
     def execute
