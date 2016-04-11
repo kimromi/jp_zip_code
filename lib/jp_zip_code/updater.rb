@@ -43,7 +43,7 @@ module JpZipCode
               file.puts JSON.generate(d)
             end
           end
-          print '.'
+          print '.' if index % 100 == 0
         end
       end
       puts "\nupdate complete."
