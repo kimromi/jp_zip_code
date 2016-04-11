@@ -17,9 +17,9 @@ describe JpZipCode::Filer::Roman do
     expect(data[Test_zip_code][:zip_code]).to   eq '8000001'
     expect(data[Test_zip_code][:pref_kanji]).to eq "福岡県"
     expect(data[Test_zip_code][:city_kanji]).to eq "北九州市　門司区"
-    expect(data[Test_zip_code][:town_kanji]).to eq "風師"
-    expect(data[Test_zip_code][:pref_roman]).to eq 'Fukuoka-Ken'
-    expect(data[Test_zip_code][:city_roman]).to eq 'Kitakyushu-Shi Moji-Ku'
-    expect(data[Test_zip_code][:town_roman]).to eq 'Kazashi'
+    expect(data[Test_zip_code][:town_kanji]).to eq "風師（４丁目）"
+    expect(data[Test_zip_code][:pref_roman]).to eq 'FUKUOKA KEN'
+    expect(data[Test_zip_code][:city_roman]).to eq 'KITAKYUSHU SHI MOJI KU'
+    expect(data[Test_zip_code][:town_roman]).to eq 'KAZASHI(4-CHOME)'
   end
 end

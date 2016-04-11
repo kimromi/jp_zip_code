@@ -5,7 +5,7 @@ require 'yaml'
 module JpZipCode
   module Filer
     class Base
-      attr_accessor :download_url, :not_found
+      attr_accessor :download_url
 
       def fetch_data
         download_file
