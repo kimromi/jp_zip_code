@@ -1,8 +1,6 @@
 require 'jp_zip_code/version'
 require 'jp_zip_code/updater'
-require 'jp_zip_code/filer/base'
-require 'jp_zip_code/filer/jp'
-require 'jp_zip_code/filer/roman'
+require 'jp_zip_code/filer'
 require 'json'
 require 'rash'
 
