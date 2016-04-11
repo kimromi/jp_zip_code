@@ -1,8 +1,12 @@
 language: ruby
 rvm:
-  - 2.1.4
+- 2.1.4
 before_install: gem install bundler -v 1.11.2
 script: bundle exec rspec
 addons:
   code_climate:
     repo_token: 5594e3f1541606356c57f9e1921f18506f63696bf118fbc3a5f57d630fe7affe
+notifications:
+  email: false
+  slack:
+    secure: EI+tiNEm2V0TmNBOmGVV40thHdFcxGhCO0hHL8skt3k6r2g+pgaeV6Zc7o25w7Vkb2ArpaqBJ/7QpIA76lkARZUgmLcaKJszo0rmQL5Od3PVPVhhNXYF4zbwTlCuLOm845iyg0FlWaHWUNuhkCcmk4F0M2lgGhgDhp/GVaQohe5vtPG8wBADppJRvIeeVtSWmu46erR7wySZu9nE05AVkBM3vnHifcSY1r9/YLJ12qm3lcJ2yzkdXmpfR1W2Y20iTLOy6nveoIt8GxMoMbWUrDIMsilFQrqqh8cVdVl4PGbsTlgmQP8ktcp75V8TllZYCIrZxRSeLHtwBNCS1ojjjs9R4gv9JOaHvwC7K30s6MLBLNpXGES8X9bYYuXt8D5U/6cTnSouz7dsAEVlb1Sgk6COFSFqLhAxAH/tLqSCn5tgIw+QON9ZknIvdNlj55ZqmZNgZ0/CWGNy32QmhIpjckofjwB6H1bxXXNsl7m8Ko+YKo/titdUZzCHbInkRZPWTR3cSuWhICSWjCj97KxCNIcN8wMPkxvjaRmX0CS4UPigvd8rsNGx4aSdxK9AtRxGDtww4lvpHryt+WzqiW1zIr1cjJWce5M9l7WvI48PG/ajNRe+9HQGO2gias6ZjjoCxboBfCJ9V0YZjY7EWZd6JFTDmbYTkTMbVJHwLxuaQ0c=
