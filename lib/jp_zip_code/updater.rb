@@ -31,15 +31,13 @@ module JpZipCode
     end
 
     def update_file(zip_code_data)
-      Dir.mkdir('data/zip_code') unless Dir.exist?('data/zip_code')
-
       unless @dry_run
         (0..9999).each do |index|
           top_four = format('%04d', index)
           d = zip_code_data.select { |data| data.start_with?(top_four) }
 
           unless d.empty?
-            File.open("data/zip_code/#{top_four}.json", 'w') do |file|
+            File.open("#{File.dirname(__FILE__)}/../../data/zip_code/#{top_four}.json", 'w') do |file|
               file.puts JSON.generate(d)
             end
           end

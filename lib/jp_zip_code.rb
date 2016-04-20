@@ -9,7 +9,7 @@ module JpZipCode
     zip_code = zip_code.to_s.delete('-')
     return nil unless zip_code =~ /^\d{7}$/
 
-    json_file = "data/zip_code/#{zip_code[0, 4]}.json"
+    json_file = "#{File.dirname(__FILE__)}/../data/zip_code/#{zip_code[0, 4]}.json"
     if File.exist?(json_file)
       data = File.open(json_file) { |json| JSON.load(json) }
       Hashie::Rash.new(convert(data[zip_code]))
@@ -31,7 +31,7 @@ module JpZipCode
   end
 
   def self.pref_codes
-    YAML.load(File.open('data/pref_code.yaml'))
+    YAML.load(File.open("#{File.dirname(__FILE__)}/../data/pref_code.yaml"))
   end
 
   def self.update
