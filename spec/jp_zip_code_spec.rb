@@ -24,7 +24,8 @@ describe JpZipCode do
       '12345678',
       '123-45678',
       'abcdefg',
-      '0000000'
+      '0000000',
+      '8190124'
     ].each do |error_zip|
       expect(JpZipCode.search(error_zip)).to eq nil
     end
