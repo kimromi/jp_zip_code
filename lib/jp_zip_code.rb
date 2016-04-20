@@ -12,7 +12,7 @@ module JpZipCode
     json_file = "#{File.dirname(__FILE__)}/../data/zip_code/#{zip_code[0, 4]}.json"
     if File.exist?(json_file)
       data = File.open(json_file) { |json| JSON.load(json) }
-      Hashie::Rash.new(convert(data[zip_code]))
+      Hashie::Rash.new(convert(data[zip_code])) if data[zip_code]
     end
   end
 
