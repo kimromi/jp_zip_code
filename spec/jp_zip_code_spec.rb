@@ -11,7 +11,7 @@ describe JpZipCode do
     expect(zip_code_data.city_kanji).to eq "北九州市門司区"
     expect(zip_code_data.town_kanji).to eq "風師"
     expect(zip_code_data.pref_roman).to eq 'Fukuoka-Ken'
-    expect(zip_code_data.city_roman).to eq 'Kitakyushu-Shi Moji-Ku'
+    expect(zip_code_data.city_roman).to eq 'Moji-Ku Kitakyushu-Shi'
     expect(zip_code_data.town_roman).to eq 'Kazashi'
     expect(zip_code_data.pref_code).to eq '40'
 
