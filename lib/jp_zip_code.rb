@@ -26,6 +26,7 @@ module JpZipCode
       %w(Ken To Fu Shi Gun Ku Machi).each do |suffix|
         converted = converted.gsub(/ #{suffix}/, "-#{suffix}")
       end
+      converted = converted.split(' ').reverse.join(' ')
       hash[key] = converted
     end
   end
