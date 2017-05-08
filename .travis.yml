@@ -6,6 +6,8 @@ script: bundle exec rspec
 addons:
   code_climate:
     repo_token: 5594e3f1541606356c57f9e1921f18506f63696bf118fbc3a5f57d630fe7affe
+after_success:
+  - bundle exec codeclimate-test-reporter
 notifications:
   email: false
   slack:
