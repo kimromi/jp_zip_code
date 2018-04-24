@@ -2,7 +2,6 @@ require 'jp_zip_code/version'
 require 'jp_zip_code/updater'
 require 'jp_zip_code/filer'
 require 'json'
-require 'rash'
 
 module JpZipCode
   def self.search(zip_code)
@@ -12,7 +11,7 @@ module JpZipCode
     json_file = "#{File.dirname(__FILE__)}/../data/zip_code/#{zip_code[0, 4]}.json"
     if File.exist?(json_file)
       data = File.open(json_file) { |json| JSON.load(json) }
-      Hashie::Mash::Rash.new(convert(data[zip_code])) if data[zip_code]
+      convert(data[zip_code]) if data[zip_code]
     end
   end
 

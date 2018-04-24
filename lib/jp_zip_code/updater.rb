@@ -14,7 +14,7 @@ module JpZipCode
 
       [@jp_filer, @roman_filer].map(&:clean)
       true
-    rescue => e
+    rescue StandardError => e
       puts "update failed. reason: #{e.message}"
       false
     end
