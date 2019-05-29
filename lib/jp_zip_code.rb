@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'jp_zip_code/version'
 require 'jp_zip_code/updater'
 require 'jp_zip_code/filer'

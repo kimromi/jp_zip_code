@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe JpZipCode::Updater do
@@ -20,15 +22,15 @@ describe JpZipCode::Updater do
   def jp_data
     {
       '8000001' => {
-        code:         '40101',
+        code: '40101',
         old_zip_code: '800',
-        zip_code:     '8000001',
-        pref_kana:    'ﾌｸｵｶｹﾝ',
-        city_kana:    'ｷﾀｷｭｳｼｭｳｼﾓｼﾞｸ',
-        town_kana:    'ｶｻﾞｼ(4ﾁｮｳﾒ)',
-        pref_kanji:   '福岡県',
-        city_kanji:   '北九州市門司区',
-        town_kanji:   '風師（４丁目）'
+        zip_code: '8000001',
+        pref_kana: 'ﾌｸｵｶｹﾝ',
+        city_kana: 'ｷﾀｷｭｳｼｭｳｼﾓｼﾞｸ',
+        town_kana: 'ｶｻﾞｼ(4ﾁｮｳﾒ)',
+        pref_kanji: '福岡県',
+        city_kanji: '北九州市門司区',
+        town_kanji: '風師（４丁目）'
       }
     }
   end
@@ -36,7 +38,7 @@ describe JpZipCode::Updater do
   def roman_data
     {
       '8000001' => {
-        zip_code:   '8000001',
+        zip_code: '8000001',
         pref_kanji: '福岡県',
         city_kanji: '北九州市　門司区',
         town_kanji: '風師（４丁目）',
@@ -50,18 +52,18 @@ describe JpZipCode::Updater do
   def merged
     {
       '8000001' => {
-        code:         '40101',
+        code: '40101',
         old_zip_code: '800',
-        zip_code:     '8000001',
-        pref_kana:    'ﾌｸｵｶｹﾝ',
-        city_kana:    'ｷﾀｷｭｳｼｭｳｼﾓｼﾞｸ',
-        town_kana:    'ｶｻﾞｼ(4ﾁｮｳﾒ)',
-        pref_kanji:   '福岡県',
-        city_kanji:   '北九州市門司区',
-        town_kanji:   '風師（４丁目）',
-        pref_roman:   'FUKUOKA KEN',
-        city_roman:   'KITAKYUSHU SHI MOJI KU',
-        town_roman:   'KAZASHI(4-CHOME)'
+        zip_code: '8000001',
+        pref_kana: 'ﾌｸｵｶｹﾝ',
+        city_kana: 'ｷﾀｷｭｳｼｭｳｼﾓｼﾞｸ',
+        town_kana: 'ｶｻﾞｼ(4ﾁｮｳﾒ)',
+        pref_kanji: '福岡県',
+        city_kanji: '北九州市門司区',
+        town_kanji: '風師（４丁目）',
+        pref_roman: 'FUKUOKA KEN',
+        city_roman: 'KITAKYUSHU SHI MOJI KU',
+        town_roman: 'KAZASHI(4-CHOME)'
       }
     }
   end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'open-uri'
 require 'zip'
 require 'yaml'
@@ -61,19 +63,19 @@ module JpZipCode
       case @type
       when :jp
         {
-          code:         datas[0],
+          code: datas[0],
           old_zip_code: datas[1],
-          zip_code:     datas[2],
-          pref_kana:    datas[3],
-          city_kana:    datas[4],
-          town_kana:    datas[5],
-          pref_kanji:   datas[6],
-          city_kanji:   datas[7],
-          town_kanji:   datas[8]
+          zip_code: datas[2],
+          pref_kana: datas[3],
+          city_kana: datas[4],
+          town_kana: datas[5],
+          pref_kanji: datas[6],
+          city_kanji: datas[7],
+          town_kanji: datas[8]
         }
       when :roman
         {
-          zip_code:   datas[0],
+          zip_code: datas[0],
           pref_kanji: datas[1],
           city_kanji: datas[2],
           town_kanji: datas[3],
