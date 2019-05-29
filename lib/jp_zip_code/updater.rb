@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module JpZipCode
   class Updater
     def initialize(dry_run = true)

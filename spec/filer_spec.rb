@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe JpZipCode::Filer do
@@ -34,7 +36,7 @@ describe JpZipCode::Filer do
     it do
       data = @filer.fetch_data
 
-      zip_code = '8000001'.freeze
+      zip_code = '8000001'
       expect(data.key?(zip_code)).to be_truthy
       expect(data[zip_code][:zip_code]).to   eq '8000001'
       expect(data[zip_code][:pref_kanji]).to eq "福岡県"
