@@ -11,9 +11,9 @@ module JpZipCode
     def download_url
       case @type
       when :jp
-        'http://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip'
+        'https://www.post.japanpost.jp/zipcode/dl/kogaki/zip/ken_all.zip'
       when :roman
-        'http://www.post.japanpost.jp/zipcode/dl/roman/ken_all_rome.zip'
+        'https://www.post.japanpost.jp/zipcode/dl/roman/ken_all_rome.zip'
       end
     end
 
